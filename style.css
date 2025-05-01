@@ -1,0 +1,22 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Make sure canvas is behind UI */
+}
+
+.name-input-container,
+.controls,
+#ascii-container,
+.instruction-overlay,
+#download-container,
+#div_t,
+#status {
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(2px); /* Optional: subtle blur for better readability */
+}
