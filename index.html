@@ -255,28 +255,46 @@
     
     /* Toggle UI button */
     /* Toggle UI button - now a link to Google */
-    #toggle-ui {
+    #burger-menu {
       position: fixed;
-      top: 10px;
-      right: 10px;
-      z-index: 200;
-      background-color: rgba(255, 255, 204, 0.7);
+      top: 24px;
+      right: 32px;
+      width: 56px;
+      height: 56px;
+      background: #FFFFCC;
+      border: 3px solid #663300;
       border-radius: 50%;
-      width: 40px;
-      height: 40px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      font-size: 20px;
+      justify-content: center;
+      z-index: 10001;
       cursor: pointer;
-      border: 2px solid #663300;
-      box-shadow: 0 3px 8px rgba(102, 51, 0, 0.15);
-      text-decoration: none;
-      color: #663300;
+      box-shadow: 0 4px 16px 0 rgba(102, 51, 0, 0.13);
+      transition: box-shadow 0.2s, background 0.2s;
     }
     
-    #toggle-ui:hover {
-      background-color: rgba(250, 242, 246, 0.7);
+    #burger-menu:hover {
+      background: #FFF9B2;
+      box-shadow: 0 8px 24px 0 rgba(102, 51, 0, 0.18);
+    }
+    
+    .burger-icon {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 28px;
+      height: 28px;
+      gap: 6px;
+    }
+    
+    .burger-icon span {
+      display: block;
+      width: 28px;
+      height: 4px;
+      background: #663300;
+      border-radius: 2px;
+      transition: background 0.2s;
     }
     
     /* Responsive adjustments */
@@ -316,7 +334,7 @@
         margin: 0;
       }
       
-      .controls, h1, #status, .name-input-container, #toggle-ui, #download-container {
+      .controls, h1, #status, .name-input-container, #burger-menu, #download-container {
         display: none;
       }
       
@@ -338,7 +356,13 @@
   </style>
 </head>
 <body>
-  <a id="toggle-ui" href="https://www.google.com" target="_blank">≡</a>
+  <div id="burger-menu" onclick="window.location.href='https://readymag.website/u3988029614/embodied/select/'">
+    <div class="burger-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
   
   <div class="name-input-container">
     <div class="input-group">
