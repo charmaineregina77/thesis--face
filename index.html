@@ -60,10 +60,14 @@
       font-family: 'Terza', monospace;
       font-weight: bold;
       position: absolute;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     
     .controls {
@@ -114,7 +118,11 @@
     }
     
     canvas {
-      display: none;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     
     /* Name input styling */
