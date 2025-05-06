@@ -297,6 +297,17 @@
       transition: background 0.2s;
     }
     
+    #embodied-logo {
+      position: fixed;
+      top: 24px;
+      left: 32px;
+      right: unset;
+      height: 60px;
+      width: auto;
+      z-index: 10002;
+      cursor: pointer;
+    }
+    
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .name-input-container {
@@ -356,6 +367,7 @@
   </style>
 </head>
 <body>
+  <img id="embodied-logo" src="EmbodiedLogo.png" alt="Embodied Logo">
   <div id="burger-menu" onclick="window.location.href='https://readymag.website/u3988029614/embodied/select/'">
     <div class="burger-icon">
       <span></span>
